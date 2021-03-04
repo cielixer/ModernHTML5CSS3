@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML5 + CSS3 Text</title>
+    </head>
+    <body>
+        <!-- h는 제목을 말하는 태그이고 뒤의 숫자는 크기(작을수록 큼)-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <hr/> <!-- 긴 가로 줄 긋기(분리용)-->
+
+        <h1>Lorem ipsum</h1>
+        <!-- 일반 본문 텍스트를 입력할 땐 p tag를 사용함-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <br/> <!-- 개행 -->
+        <p>Atque quasi vero necessitatibus illo aliquam eum labore dolores nulla! Praesentium, </p>
+        <br/>
+        <p>itaque architecto facere iure maiores suscipit harum incidunt reiciendis doloribus eos.</p>
+        <br/>
+        <!-- a 는 앵커 태그로 링크 걸어주는 용도, href는 타겟 위치-->
+        <a href="https://github.com/cielixer">github</a>
+
+        <!-- a를 하이퍼링크로 사용하지 않는 경우가 있음, 다만 href를 넣는 것이 표준이라서-->
+        <!-- 어디론가 이동하고 싶지 않으면 #을 넣게 됨. 눌러도 아무 일 안일어남-->
+        <a href="#">Twitter</a>
+        
+        <!-- 또한 제목 태그(h)에 #id를 넣으면 페이지 id가 있는 곳으로 이동하게 됨-->
+        <a href="#alpha">Move to Alpha</a>
+        <br />
+        <h1 id="alpha">Alpha!</h1>
+
+        <br/>
+
+        <!-- 워드처럼 글자 모양을 설정할 수 있음!-->
+        <!-- b : bold, SolarLint 규격에 의해서 strong을 사용하는 것을 권장함-->
+        <h1><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi vitae excepturi a perspiciatis doloribus molestiae quae, nemo pariatur necessitatibus obcaecati saepe dicta in nobis voluptatem tempore fugiat consectetur, iusto ea.</strong></h1>
+        <!-- i : italic, 마찬가지로 em을 사용하는 것을 권장함-->
+        <h1><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit culpa dicta rerum animi tempora ad aspernatur magni et eveniet eius voluptatibus recusandae omnis praesentium, impedit quos quaerat voluptas quod.</em></h1>
+        <!-- small : 작은 글자-->
+        <h1><small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, sequi maiores rerum hic illum libero laudantium nesciunt nisi corporis odio nobis? Porro quia aliquam atque repellat aperiam est dolorum reprehenderit!</small></h1>
+        <!-- sub : 아래첨자 (수학?)-->
+        <h1><sub>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum numquam inventore aperiam animi, ipsum sint vero quasi fuga impedit recusandae beatae vitae vel libero. Culpa necessitatibus magnam neque fugiat?</sub></h1>
+        <!-- sup : 위첨자 (수학?)-->
+        <h1><sup>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta placeat minus magnam esse facere ipsa ut sit corporis quidem nihil nisi sed doloribus minima eum, culpa earum veritatis quis.</sup></h1>
+        <!-- ins : 밑줄-->
+        <h1><ins>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis dolores odio commodi explicabo qui officia quibusdam aliquam excepturi harum? Dicta earum nobis optio maiores voluptatum, quod nihil placeat labore.</ins></h1>
+        <!-- del : 가운데 줄-->
+        <h1><del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores quas provident, corrupti fugit quaerat esse deleniti voluptatibus eligendi rem numquam porro aspernatur doloribus iste, ad rerum molestias, reiciendis doloremque.</del></h1>
+        <!-- 최근엔 이런 형태의 태그들을 거의 사용하지 않음. CSS 사용함-->
+
+        <br/>
+
+        <!-- ruby 문자는 노래방에서 일본 노래 부르는거 처럼 위에 히라가나/가타카나가 표시되는 형태의 문자-->
+        <ruby>
+            <span>대한민국</span> <!--밑부분-->
+            <rt>헬조선</rt> <!--윗부분-->
+        </ruby>
+
+        <!-- ruby문자를 지원하지 않는 파폭같은 웹 브라우저는 아래와 같이 사용함-->
+        <ruby>
+            <span>대한민국</span> <!--밑부분-->
+            <rp>(</rp>
+            <rt>헬조선</rt> <!--윗부분-->
+            <rp>)</rp>
+        </ruby>
+        <!-- 실제로 ruby라는 태그가 없는데도 사용되는 이유는... 그냥 아무 이름인 태그인거임. 그냥 태그. 동작이 없음. 파이썬의 _같은거나 std::ignore인데 + 스코프 기능? 혹은 그냥 {}-->
+        <!-- 왜냐면 HTML은 유사언어이므로 컴파일 실패같은건 존재하지 않기 때문임. 브라우저가 지 꼴리는데로 해버림-->
+
+    </body>
+</html>
